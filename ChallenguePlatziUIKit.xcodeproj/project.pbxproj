@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		09747526BF981B94456FC45D /* Pods_ChallenguePlatziUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A57744A06D1F14B6CA09A38 /* Pods_ChallenguePlatziUIKit.framework */; };
 		6309BED4297110C600AA6DDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6309BED3297110C600AA6DDF /* AppDelegate.swift */; };
 		6309BED6297110C600AA6DDF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6309BED5297110C600AA6DDF /* SceneDelegate.swift */; };
 		6309BEDD297110C700AA6DDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6309BEDC297110C700AA6DDF /* Assets.xcassets */; };
@@ -19,8 +18,20 @@
 		6309BF0E2971370D00AA6DDF /* CatPreviewCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6309BF0D2971370D00AA6DDF /* CatPreviewCollectionViewCell.swift */; };
 		6309BF112971372800AA6DDF /* UICollectionViewCell+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6309BF102971372800AA6DDF /* UICollectionViewCell+Extensions.swift */; };
 		6309BF152971401B00AA6DDF /* CatsPrincipalLandingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6309BF142971401B00AA6DDF /* CatsPrincipalLandingViewModel.swift */; };
-		ABB6A4BFF53957D0C2D4C991 /* Pods_ChallenguePlatziUIKit_ChallenguePlatziUIKitUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41BEC463944B21A46151830B /* Pods_ChallenguePlatziUIKit_ChallenguePlatziUIKitUITests.framework */; };
-		C47580746D3F108D7A995680 /* Pods_ChallenguePlatziUIKitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D0E5F7F75B3D015C735031B /* Pods_ChallenguePlatziUIKitTests.framework */; };
+		6309BF1729714C4B00AA6DDF /* CatPreviewMainItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6309BF1629714C4B00AA6DDF /* CatPreviewMainItem.swift */; };
+		6309BF1A297153FF00AA6DDF /* GenericNetworkingLayer in Frameworks */ = {isa = PBXBuildFile; productRef = 6309BF19297153FF00AA6DDF /* GenericNetworkingLayer */; };
+		6309BF1E297154AE00AA6DDF /* CatsPrincipalLandingApiDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6309BF1D297154AE00AA6DDF /* CatsPrincipalLandingApiDataManager.swift */; };
+		6309BF232971552B00AA6DDF /* GetCatsMainRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6309BF222971552B00AA6DDF /* GetCatsMainRequest.swift */; };
+		6309BF25297157A200AA6DDF /* GetCatsServiceResponseDBO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6309BF24297157A200AA6DDF /* GetCatsServiceResponseDBO.swift */; };
+		6309BF272971580100AA6DDF /* CatsPrincipalLandingRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6309BF262971580100AA6DDF /* CatsPrincipalLandingRepository.swift */; };
+		6309BF302972689F00AA6DDF /* ImageRemoteDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6309BF2A2972689F00AA6DDF /* ImageRemoteDataSourceProtocol.swift */; };
+		6309BF312972689F00AA6DDF /* ImageDownloaderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6309BF2C2972689F00AA6DDF /* ImageDownloaderManager.swift */; };
+		6309BF322972689F00AA6DDF /* InternetConnectionCheckeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6309BF2E2972689F00AA6DDF /* InternetConnectionCheckeable.swift */; };
+		6309BF332972689F00AA6DDF /* InternetConnectionCheckerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6309BF2F2972689F00AA6DDF /* InternetConnectionCheckerManager.swift */; };
+		6309BF3829726F0200AA6DDF /* CatsDetailScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6309BF3729726F0200AA6DDF /* CatsDetailScreenView.swift */; };
+		6309BF3B2972717500AA6DDF /* CatsPrincipalLandingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6309BF3A2972717500AA6DDF /* CatsPrincipalLandingRouter.swift */; };
+		6309BF3E297274F400AA6DDF /* CatsDetailScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6309BF3D297274F400AA6DDF /* CatsDetailScreenViewModel.swift */; };
+		6309BF42297277F700AA6DDF /* CatsDetailScreenRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6309BF41297277F700AA6DDF /* CatsDetailScreenRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,9 +52,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0A57744A06D1F14B6CA09A38 /* Pods_ChallenguePlatziUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChallenguePlatziUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		15BF4EACB9F189BB5E912612 /* Pods-ChallenguePlatziUIKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallenguePlatziUIKit.release.xcconfig"; path = "Target Support Files/Pods-ChallenguePlatziUIKit/Pods-ChallenguePlatziUIKit.release.xcconfig"; sourceTree = "<group>"; };
-		41BEC463944B21A46151830B /* Pods_ChallenguePlatziUIKit_ChallenguePlatziUIKitUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChallenguePlatziUIKit_ChallenguePlatziUIKitUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6309BED0297110C600AA6DDF /* ChallenguePlatziUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChallenguePlatziUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6309BED3297110C600AA6DDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6309BED5297110C600AA6DDF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,12 +67,19 @@
 		6309BF0D2971370D00AA6DDF /* CatPreviewCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatPreviewCollectionViewCell.swift; sourceTree = "<group>"; };
 		6309BF102971372800AA6DDF /* UICollectionViewCell+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Extensions.swift"; sourceTree = "<group>"; };
 		6309BF142971401B00AA6DDF /* CatsPrincipalLandingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsPrincipalLandingViewModel.swift; sourceTree = "<group>"; };
-		68DA5C5C223FD91BF93B215A /* Pods-ChallenguePlatziUIKit-ChallenguePlatziUIKitUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallenguePlatziUIKit-ChallenguePlatziUIKitUITests.debug.xcconfig"; path = "Target Support Files/Pods-ChallenguePlatziUIKit-ChallenguePlatziUIKitUITests/Pods-ChallenguePlatziUIKit-ChallenguePlatziUIKitUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		7D0E5F7F75B3D015C735031B /* Pods_ChallenguePlatziUIKitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChallenguePlatziUIKitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B7F85F3A58FE9F3E04C6C711 /* Pods-ChallenguePlatziUIKitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallenguePlatziUIKitTests.release.xcconfig"; path = "Target Support Files/Pods-ChallenguePlatziUIKitTests/Pods-ChallenguePlatziUIKitTests.release.xcconfig"; sourceTree = "<group>"; };
-		BF93509E6E439309177D1AA8 /* Pods-ChallenguePlatziUIKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallenguePlatziUIKitTests.debug.xcconfig"; path = "Target Support Files/Pods-ChallenguePlatziUIKitTests/Pods-ChallenguePlatziUIKitTests.debug.xcconfig"; sourceTree = "<group>"; };
-		C82A13F92A2F1108F6B5FAFB /* Pods-ChallenguePlatziUIKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallenguePlatziUIKit.debug.xcconfig"; path = "Target Support Files/Pods-ChallenguePlatziUIKit/Pods-ChallenguePlatziUIKit.debug.xcconfig"; sourceTree = "<group>"; };
-		DB53DED0F6F1290BA821BA91 /* Pods-ChallenguePlatziUIKit-ChallenguePlatziUIKitUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallenguePlatziUIKit-ChallenguePlatziUIKitUITests.release.xcconfig"; path = "Target Support Files/Pods-ChallenguePlatziUIKit-ChallenguePlatziUIKitUITests/Pods-ChallenguePlatziUIKit-ChallenguePlatziUIKitUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6309BF1629714C4B00AA6DDF /* CatPreviewMainItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatPreviewMainItem.swift; sourceTree = "<group>"; };
+		6309BF1D297154AE00AA6DDF /* CatsPrincipalLandingApiDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsPrincipalLandingApiDataManager.swift; sourceTree = "<group>"; };
+		6309BF222971552B00AA6DDF /* GetCatsMainRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCatsMainRequest.swift; sourceTree = "<group>"; };
+		6309BF24297157A200AA6DDF /* GetCatsServiceResponseDBO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCatsServiceResponseDBO.swift; sourceTree = "<group>"; };
+		6309BF262971580100AA6DDF /* CatsPrincipalLandingRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsPrincipalLandingRepository.swift; sourceTree = "<group>"; };
+		6309BF2A2972689F00AA6DDF /* ImageRemoteDataSourceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageRemoteDataSourceProtocol.swift; sourceTree = "<group>"; };
+		6309BF2C2972689F00AA6DDF /* ImageDownloaderManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDownloaderManager.swift; sourceTree = "<group>"; };
+		6309BF2E2972689F00AA6DDF /* InternetConnectionCheckeable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InternetConnectionCheckeable.swift; sourceTree = "<group>"; };
+		6309BF2F2972689F00AA6DDF /* InternetConnectionCheckerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InternetConnectionCheckerManager.swift; sourceTree = "<group>"; };
+		6309BF3729726F0200AA6DDF /* CatsDetailScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsDetailScreenView.swift; sourceTree = "<group>"; };
+		6309BF3A2972717500AA6DDF /* CatsPrincipalLandingRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsPrincipalLandingRouter.swift; sourceTree = "<group>"; };
+		6309BF3D297274F400AA6DDF /* CatsDetailScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsDetailScreenViewModel.swift; sourceTree = "<group>"; };
+		6309BF41297277F700AA6DDF /* CatsDetailScreenRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsDetailScreenRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09747526BF981B94456FC45D /* Pods_ChallenguePlatziUIKit.framework in Frameworks */,
+				6309BF1A297153FF00AA6DDF /* GenericNetworkingLayer in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,7 +95,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C47580746D3F108D7A995680 /* Pods_ChallenguePlatziUIKitTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,23 +102,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABB6A4BFF53957D0C2D4C991 /* Pods_ChallenguePlatziUIKit_ChallenguePlatziUIKitUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0C2A3744A2EA3EE9154496F7 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				0A57744A06D1F14B6CA09A38 /* Pods_ChallenguePlatziUIKit.framework */,
-				41BEC463944B21A46151830B /* Pods_ChallenguePlatziUIKit_ChallenguePlatziUIKitUITests.framework */,
-				7D0E5F7F75B3D015C735031B /* Pods_ChallenguePlatziUIKitTests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		6309BEC7297110C600AA6DDF = {
 			isa = PBXGroup;
 			children = (
@@ -112,8 +115,6 @@
 				6309BEE9297110C700AA6DDF /* ChallenguePlatziUIKitTests */,
 				6309BEF3297110C700AA6DDF /* ChallenguePlatziUIKitUITests */,
 				6309BED1297110C600AA6DDF /* Products */,
-				96C84E5236016F481F0BC995 /* Pods */,
-				0C2A3744A2EA3EE9154496F7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -130,7 +131,9 @@
 		6309BED2297110C600AA6DDF /* ChallenguePlatziUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				6309BF28297267B600AA6DDF /* Managers */,
 				6309BF0F2971371800AA6DDF /* Extensions */,
+				6309BF1F297154E100AA6DDF /* Services */,
 				6309BF052971121000AA6DDF /* Modules */,
 				6309BF04297111ED00AA6DDF /* Resources */,
 				6309BF03297111CE00AA6DDF /* SupportingFiles */,
@@ -177,6 +180,7 @@
 		6309BF052971121000AA6DDF /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				6309BF3429726ECB00AA6DDF /* DetailScreen */,
 				6309BF0629712FB100AA6DDF /* PrincipalLanding */,
 			);
 			path = Modules;
@@ -185,6 +189,9 @@
 		6309BF0629712FB100AA6DDF /* PrincipalLanding */ = {
 			isa = PBXGroup;
 			children = (
+				6309BF392972715B00AA6DDF /* Router */,
+				6309BF1C2971546A00AA6DDF /* ApiManager */,
+				6309BF1B2971546000AA6DDF /* Repository */,
 				6309BF132971400900AA6DDF /* ViewModel */,
 				6309BF122971400100AA6DDF /* Model */,
 				6309BF0C297136EC00AA6DDF /* Cells */,
@@ -220,6 +227,7 @@
 		6309BF122971400100AA6DDF /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				6309BF1629714C4B00AA6DDF /* CatPreviewMainItem.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -232,18 +240,122 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		96C84E5236016F481F0BC995 /* Pods */ = {
+		6309BF1B2971546000AA6DDF /* Repository */ = {
 			isa = PBXGroup;
 			children = (
-				C82A13F92A2F1108F6B5FAFB /* Pods-ChallenguePlatziUIKit.debug.xcconfig */,
-				15BF4EACB9F189BB5E912612 /* Pods-ChallenguePlatziUIKit.release.xcconfig */,
-				68DA5C5C223FD91BF93B215A /* Pods-ChallenguePlatziUIKit-ChallenguePlatziUIKitUITests.debug.xcconfig */,
-				DB53DED0F6F1290BA821BA91 /* Pods-ChallenguePlatziUIKit-ChallenguePlatziUIKitUITests.release.xcconfig */,
-				BF93509E6E439309177D1AA8 /* Pods-ChallenguePlatziUIKitTests.debug.xcconfig */,
-				B7F85F3A58FE9F3E04C6C711 /* Pods-ChallenguePlatziUIKitTests.release.xcconfig */,
+				6309BF262971580100AA6DDF /* CatsPrincipalLandingRepository.swift */,
 			);
-			name = Pods;
-			path = Pods;
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		6309BF1C2971546A00AA6DDF /* ApiManager */ = {
+			isa = PBXGroup;
+			children = (
+				6309BF1D297154AE00AA6DDF /* CatsPrincipalLandingApiDataManager.swift */,
+			);
+			path = ApiManager;
+			sourceTree = "<group>";
+		};
+		6309BF1F297154E100AA6DDF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				6309BF212971551200AA6DDF /* Requests */,
+				6309BF202971550B00AA6DDF /* GetCatsService */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		6309BF202971550B00AA6DDF /* GetCatsService */ = {
+			isa = PBXGroup;
+			children = (
+				6309BF24297157A200AA6DDF /* GetCatsServiceResponseDBO.swift */,
+			);
+			path = GetCatsService;
+			sourceTree = "<group>";
+		};
+		6309BF212971551200AA6DDF /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				6309BF222971552B00AA6DDF /* GetCatsMainRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		6309BF28297267B600AA6DDF /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				6309BF292972689F00AA6DDF /* Image */,
+				6309BF2D2972689F00AA6DDF /* InternetChecker */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		6309BF292972689F00AA6DDF /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				6309BF2A2972689F00AA6DDF /* ImageRemoteDataSourceProtocol.swift */,
+				6309BF2B2972689F00AA6DDF /* ImageDownload */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		6309BF2B2972689F00AA6DDF /* ImageDownload */ = {
+			isa = PBXGroup;
+			children = (
+				6309BF2C2972689F00AA6DDF /* ImageDownloaderManager.swift */,
+			);
+			path = ImageDownload;
+			sourceTree = "<group>";
+		};
+		6309BF2D2972689F00AA6DDF /* InternetChecker */ = {
+			isa = PBXGroup;
+			children = (
+				6309BF2E2972689F00AA6DDF /* InternetConnectionCheckeable.swift */,
+				6309BF2F2972689F00AA6DDF /* InternetConnectionCheckerManager.swift */,
+			);
+			path = InternetChecker;
+			sourceTree = "<group>";
+		};
+		6309BF3429726ECB00AA6DDF /* DetailScreen */ = {
+			isa = PBXGroup;
+			children = (
+				6309BF40297277E100AA6DDF /* Repository */,
+				6309BF3F297274F800AA6DDF /* ViewModel */,
+				6309BF3C297274E700AA6DDF /* View */,
+			);
+			path = DetailScreen;
+			sourceTree = "<group>";
+		};
+		6309BF392972715B00AA6DDF /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				6309BF3A2972717500AA6DDF /* CatsPrincipalLandingRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		6309BF3C297274E700AA6DDF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6309BF3729726F0200AA6DDF /* CatsDetailScreenView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6309BF3F297274F800AA6DDF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6309BF3D297274F400AA6DDF /* CatsDetailScreenViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6309BF40297277E100AA6DDF /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				6309BF41297277F700AA6DDF /* CatsDetailScreenRepository.swift */,
+			);
+			path = Repository;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,17 +365,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6309BEFA297110C700AA6DDF /* Build configuration list for PBXNativeTarget "ChallenguePlatziUIKit" */;
 			buildPhases = (
-				C34CA7772F2DEC67C0CC9F3C /* [CP] Check Pods Manifest.lock */,
 				6309BECC297110C600AA6DDF /* Sources */,
 				6309BECD297110C600AA6DDF /* Frameworks */,
 				6309BECE297110C600AA6DDF /* Resources */,
-				38C7B98B0C9EA9D13337ED08 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = ChallenguePlatziUIKit;
+			packageProductDependencies = (
+				6309BF19297153FF00AA6DDF /* GenericNetworkingLayer */,
+			);
 			productName = ChallenguePlatziUIKit;
 			productReference = 6309BED0297110C600AA6DDF /* ChallenguePlatziUIKit.app */;
 			productType = "com.apple.product-type.application";
@@ -272,7 +385,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6309BEFD297110C700AA6DDF /* Build configuration list for PBXNativeTarget "ChallenguePlatziUIKitTests" */;
 			buildPhases = (
-				340B7C3FEFCA0E96B327EFD6 /* [CP] Check Pods Manifest.lock */,
 				6309BEE2297110C700AA6DDF /* Sources */,
 				6309BEE3297110C700AA6DDF /* Frameworks */,
 				6309BEE4297110C700AA6DDF /* Resources */,
@@ -291,11 +403,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6309BF00297110C700AA6DDF /* Build configuration list for PBXNativeTarget "ChallenguePlatziUIKitUITests" */;
 			buildPhases = (
-				4CC70B0AA1AEBB4F1B86AA88 /* [CP] Check Pods Manifest.lock */,
 				6309BEEC297110C700AA6DDF /* Sources */,
 				6309BEED297110C700AA6DDF /* Frameworks */,
 				6309BEEE297110C700AA6DDF /* Resources */,
-				24C782974364B1C929F04868 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -339,6 +449,9 @@
 				Base,
 			);
 			mainGroup = 6309BEC7297110C600AA6DDF;
+			packageReferences = (
+				6309BF18297153FF00AA6DDF /* XCRemoteSwiftPackageReference "GenericWebServicesLayer" */,
+			);
 			productRefGroup = 6309BED1297110C600AA6DDF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -376,120 +489,30 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		24C782974364B1C929F04868 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ChallenguePlatziUIKit-ChallenguePlatziUIKitUITests/Pods-ChallenguePlatziUIKit-ChallenguePlatziUIKitUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ChallenguePlatziUIKit-ChallenguePlatziUIKitUITests/Pods-ChallenguePlatziUIKit-ChallenguePlatziUIKitUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ChallenguePlatziUIKit-ChallenguePlatziUIKitUITests/Pods-ChallenguePlatziUIKit-ChallenguePlatziUIKitUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		340B7C3FEFCA0E96B327EFD6 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ChallenguePlatziUIKitTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		38C7B98B0C9EA9D13337ED08 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ChallenguePlatziUIKit/Pods-ChallenguePlatziUIKit-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ChallenguePlatziUIKit/Pods-ChallenguePlatziUIKit-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ChallenguePlatziUIKit/Pods-ChallenguePlatziUIKit-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4CC70B0AA1AEBB4F1B86AA88 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ChallenguePlatziUIKit-ChallenguePlatziUIKitUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C34CA7772F2DEC67C0CC9F3C /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ChallenguePlatziUIKit-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		6309BECC297110C600AA6DDF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				6309BF152971401B00AA6DDF /* CatsPrincipalLandingViewModel.swift in Sources */,
+				6309BF232971552B00AA6DDF /* GetCatsMainRequest.swift in Sources */,
 				6309BED4297110C600AA6DDF /* AppDelegate.swift in Sources */,
 				6309BF0929712FED00AA6DDF /* CatsPrincipalLandingView.swift in Sources */,
+				6309BF25297157A200AA6DDF /* GetCatsServiceResponseDBO.swift in Sources */,
 				6309BF112971372800AA6DDF /* UICollectionViewCell+Extensions.swift in Sources */,
+				6309BF3E297274F400AA6DDF /* CatsDetailScreenViewModel.swift in Sources */,
+				6309BF332972689F00AA6DDF /* InternetConnectionCheckerManager.swift in Sources */,
+				6309BF302972689F00AA6DDF /* ImageRemoteDataSourceProtocol.swift in Sources */,
+				6309BF1E297154AE00AA6DDF /* CatsPrincipalLandingApiDataManager.swift in Sources */,
 				6309BF0E2971370D00AA6DDF /* CatPreviewCollectionViewCell.swift in Sources */,
+				6309BF42297277F700AA6DDF /* CatsDetailScreenRepository.swift in Sources */,
+				6309BF312972689F00AA6DDF /* ImageDownloaderManager.swift in Sources */,
+				6309BF1729714C4B00AA6DDF /* CatPreviewMainItem.swift in Sources */,
+				6309BF3B2972717500AA6DDF /* CatsPrincipalLandingRouter.swift in Sources */,
+				6309BF322972689F00AA6DDF /* InternetConnectionCheckeable.swift in Sources */,
 				6309BED6297110C600AA6DDF /* SceneDelegate.swift in Sources */,
+				6309BF3829726F0200AA6DDF /* CatsDetailScreenView.swift in Sources */,
+				6309BF272971580100AA6DDF /* CatsPrincipalLandingRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -653,7 +676,6 @@
 		};
 		6309BEFB297110C700AA6DDF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C82A13F92A2F1108F6B5FAFB /* Pods-ChallenguePlatziUIKit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -681,7 +703,6 @@
 		};
 		6309BEFC297110C700AA6DDF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 15BF4EACB9F189BB5E912612 /* Pods-ChallenguePlatziUIKit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -709,7 +730,6 @@
 		};
 		6309BEFE297110C700AA6DDF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BF93509E6E439309177D1AA8 /* Pods-ChallenguePlatziUIKitTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -730,7 +750,6 @@
 		};
 		6309BEFF297110C700AA6DDF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B7F85F3A58FE9F3E04C6C711 /* Pods-ChallenguePlatziUIKitTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -751,7 +770,6 @@
 		};
 		6309BF01297110C700AA6DDF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 68DA5C5C223FD91BF93B215A /* Pods-ChallenguePlatziUIKit-ChallenguePlatziUIKitUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -770,7 +788,6 @@
 		};
 		6309BF02297110C700AA6DDF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DB53DED0F6F1290BA821BA91 /* Pods-ChallenguePlatziUIKit-ChallenguePlatziUIKitUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -827,6 +844,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6309BF18297153FF00AA6DDF /* XCRemoteSwiftPackageReference "GenericWebServicesLayer" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/radg1596/GenericWebServicesLayer.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6309BF19297153FF00AA6DDF /* GenericNetworkingLayer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6309BF18297153FF00AA6DDF /* XCRemoteSwiftPackageReference "GenericWebServicesLayer" */;
+			productName = GenericNetworkingLayer;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6309BEC8297110C600AA6DDF /* Project object */;
 }

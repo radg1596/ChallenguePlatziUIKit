@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Combine
 
 class CatPreviewCollectionViewCell: UICollectionViewCell {
 
@@ -28,12 +29,30 @@ class CatPreviewCollectionViewCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
 
+    // MARK: - OTHER PROPERTIES
+    private let imageDataSource: ImageRemoteDataSourceProtocol = ImageDownloaderManager()
+    private var cancelables = Set<AnyCancellable>()
+
+    // MARK: - MODEL
+    var model: CatPreviewMainItem? {
+        didSet {
+            didSetModelInCell()
+        }
+    }
+
+    // MARK: - VIEW LIFE CYCLE
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        cancelables.forEach({$0.cancel()})
+        imageView.image = nil
+        activityIndicatorView.startAnimating()
+    }
+
     // MARK: - UI
     private func configureUI() {
-        backgroundColor = .red
+        backgroundColor = .gray
         builImageView()
         buildActivityIndicatorView()
-        imageView.image = UIImage(systemName: "heart.fill")
         activityIndicatorView.hidesWhenStopped = true
         activityIndicatorView.startAnimating()
     }
@@ -58,6 +77,28 @@ class CatPreviewCollectionViewCell: UICollectionViewCell {
             activityIndicatorView.centerXAnchor.constraint(equalTo: centerXAnchor),
             activityIndicatorView.centerYAnchor.constraint(equalTo: centerYAnchor)
         ])
+    }
+
+    // MARK: - MODEL DRAW
+    private func didSetModelInCell() {
+        guard let model = model else { return }
+        let urlForImage = "https://cataas.com/cat/\(model.id)"
+        imageDataSource
+            .requestToFetchImage(urlForImage,
+                                            cachePolicy: .returnCacheDataElseLoad)
+            .sink { response in
+                switch response {
+                case .finished:
+                    return
+                case .failure:
+                    // Error...
+                    return
+                }
+            } receiveValue: { image in
+                self.activityIndicatorView.stopAnimating()
+                self.imageView.image = image
+            }
+            .store(in: &cancelables)
     }
 
 }
