@@ -7,10 +7,15 @@
 
 import Combine
 
-final class CatsPrincipalLandingRepository {
+final class CatsPrincipalLandingRepository: CatsPrincipalLandingRepositoryProtocol {
 
     // MARK: - PROPERTIES
-    private let apiDataManager = CatsPrincipalLandingApiDataManager()
+    private let apiDataManager: CatsPrincipalLandingApiDataManagerProtocol
+
+    // MARK: - INIT
+    init(apiDataManager: CatsPrincipalLandingApiDataManagerProtocol) {
+        self.apiDataManager = apiDataManager
+    }
 
     // MARK: - METHODS
     func fetchCats() -> AnyPublisher<[GetCatsServiceResponseDBO], Error> {

@@ -18,6 +18,9 @@ class CatPreviewCollectionViewCell: UICollectionViewCell {
         UIActivityIndicatorView(frame: .zero)
     }()
 
+    // MARK: - CONSTANTS
+    private let constants = CatPreviewCollectionViewCellConstants()
+
     // MARK: - INIT
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -25,8 +28,7 @@ class CatPreviewCollectionViewCell: UICollectionViewCell {
     }
 
     required init?(coder: NSCoder) {
-        // TODO: - Move error to localizables
-        fatalError("init(coder:) has not been implemented")
+        fatalError(AppGeneralErrorStrings.canNotBuildViewError.localize)
     }
 
     // MARK: - OTHER PROPERTIES
@@ -50,7 +52,8 @@ class CatPreviewCollectionViewCell: UICollectionViewCell {
 
     // MARK: - UI
     private func configureUI() {
-        backgroundColor = .gray
+        backgroundColor = .backgroundColorLight
+        layer.cornerRadius = constants.viewCornerRadius
         builImageView()
         buildActivityIndicatorView()
         activityIndicatorView.hidesWhenStopped = true
@@ -82,21 +85,20 @@ class CatPreviewCollectionViewCell: UICollectionViewCell {
     // MARK: - MODEL DRAW
     private func didSetModelInCell() {
         guard let model = model else { return }
-        let urlForImage = "https://cataas.com/cat/\(model.id)"
         imageDataSource
-            .requestToFetchImage(urlForImage,
-                                            cachePolicy: .returnCacheDataElseLoad)
-            .sink { response in
+            .requestToFetchImage(model.imageUrl,
+                                 cachePolicy: .returnCacheDataElseLoad)
+            .sink { [weak self] response in
                 switch response {
                 case .finished:
                     return
                 case .failure:
-                    // Error...
-                    return
+                    self?.activityIndicatorView.stopAnimating()
+                    self?.imageView.image = UIImage(named: AppGeneralConstants.imagePlaceHolderError)
                 }
-            } receiveValue: { image in
-                self.activityIndicatorView.stopAnimating()
-                self.imageView.image = image
+            } receiveValue: { [weak self] image in
+                self?.activityIndicatorView.stopAnimating()
+                self?.imageView.image = image
             }
             .store(in: &cancelables)
     }

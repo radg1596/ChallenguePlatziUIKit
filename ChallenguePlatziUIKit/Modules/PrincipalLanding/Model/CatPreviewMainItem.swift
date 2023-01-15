@@ -10,13 +10,13 @@ import Foundation
 struct CatPreviewMainItem {
 
     // MARK: - PROPERTIES
-    let id: String
+    let imageUrl: String
     let createdAt: String
     let tags: [String]
 
     // MARK: - INIT DBO
     init(dbo: GetCatsServiceResponseDBO) {
-        self.id = dbo.id
+        self.imageUrl = "\(AppGeneralConstants.servicesMainUrl)\(dbo.id)"
         self.createdAt = dbo.createdAt
         self.tags = dbo.tags
     }

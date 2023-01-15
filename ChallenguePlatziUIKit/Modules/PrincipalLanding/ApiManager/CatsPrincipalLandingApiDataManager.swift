@@ -8,10 +8,10 @@
 import Combine
 import GenericNetworkingLayer
 
-final class CatsPrincipalLandingApiDataManager {
+final class CatsPrincipalLandingApiDataManager: CatsPrincipalLandingApiDataManagerProtocol {
 
     // MARK: - PROPERTIES
-    private let catsService = GenericWebServiceManager<[GetCatsServiceResponseDBO], GenericWebServiceGenericErrorModel>(request: GetCatsMainRequest(limit: 1_000))
+    private let catsService = GenericWebServiceManager<[GetCatsServiceResponseDBO], GenericWebServiceGenericErrorModel>(request: GetCatsMainRequest(limit: AppGeneralConstants.requestLimit))
 
     // MARK: - METHODS
     func fetchCats() -> AnyPublisher<[GetCatsServiceResponseDBO], Error> {

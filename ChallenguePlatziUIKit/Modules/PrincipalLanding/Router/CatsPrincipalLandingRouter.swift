@@ -7,14 +7,14 @@
 
 import UIKit
 
-class CatsPrincipalLandingRouter {
+class CatsPrincipalLandingRouter: CatsPrincipalLandingRouterProtocol {
 
     // MARK: - PROPERTIES
     private weak var viewReference: UIViewController?
 
     // MARK: - INIT
-    init(view: UIViewController) {
-        self.viewReference = view
+    init(viewReference: UIViewController? = nil) {
+        self.viewReference = viewReference
     }
 
     // MARK: - METHODS
@@ -24,6 +24,19 @@ class CatsPrincipalLandingRouter {
         detailView.viewModel = CatsDetailScreenViewModel(item: item)
         view.navigationController?.pushViewController(detailView,
                                                       animated: true)
+    }
+
+    static func createModule() -> CatsPrincipalLandingView {
+        let view = CatsPrincipalLandingView()
+        let router = CatsPrincipalLandingRouter(viewReference: view)
+        let apiDataManager = CatsPrincipalLandingApiDataManager()
+        let repository = CatsPrincipalLandingRepository(apiDataManager: apiDataManager)
+        let connectionChecker = InternetConnectionCheckerManager()
+        let viewModel = CatsPrincipalLandingViewModel(router: router,
+                                                      connectionChecker: connectionChecker,
+                                                      dataRepository: repository)
+        view.viewModel = viewModel
+        return view
     }
 
 }
