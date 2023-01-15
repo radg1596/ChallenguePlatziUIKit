@@ -23,10 +23,11 @@ class ImageDownloaderManager: ImageRemoteDataSourceProtocol {
     // MARK: - METHODS
     func requestToFetchImage(_ fromUrl: String, cachePolicy: NSURLRequest.CachePolicy) -> AnyPublisher<UIImage, Error> {
         guard let urlForImage = URL(string: fromUrl),
-              let requestForImage = URLRequest(url: urlForImage, cachePolicy: cachePolicy).urlRequest else {
+              var requestForImage = URLRequest(url: urlForImage, cachePolicy: cachePolicy).urlRequest else {
             return Fail(outputType: UIImage.self, failure: InternalError.invalidURL)
                 .eraseToAnyPublisher()
         }
+        requestForImage.timeoutInterval = AppGeneralConstants.imageTimeOut
         let publisherFromUrlSession = URLSession.shared.dataTaskPublisher(for: requestForImage)
         return publisherFromUrlSession
             .tryMap( { try self.mapToImage(data: $0, response: $1) })

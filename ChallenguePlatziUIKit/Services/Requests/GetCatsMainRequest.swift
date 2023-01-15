@@ -19,8 +19,8 @@ final class GetCatsMainRequest: GenericWebServiceRequestable {
     }
 
     // MARK: - PROTOCOL CONFORMANCE
-    var baseUrl: String { "https://cataas.com/api" }
-    var endPointPath: String { "/cats" }
+    var baseUrl: String { AppGeneralConstants.servicesMainUrl }
+    var endPointPath: String { "cats" }
     var method: Alamofire.HTTPMethod { .get }
     var headers: Alamofire.HTTPHeaders { HTTPHeaders() }
     var timeOut: Double { 30.0 }

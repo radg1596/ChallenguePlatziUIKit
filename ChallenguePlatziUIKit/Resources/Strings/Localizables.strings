@@ -1,0 +1,19 @@
+/* 
+  Localizables.strings
+  ChallenguePlatziUIKit
+
+  Created by Ricardo Desiderio on 14/01/23.
+  
+*/
+
+// MARK: - ERROR ALERTS
+"app_general_error_strings_server_error_title" = "No se ha podido conectar al servidor";
+"app_general_error_strings_server_error_body" = "Por favor reintenta de nuevo más tarde.";
+"app_general_error_strings_server_error_retry_button" = "Reintentar";
+"app_general_error_strings_no_internet_title" = "Sin internet";
+"app_general_error_strings_no_internet_body" = "No se podido establecer conexión a internet";
+"app_general_error_strings_no_internet_retry_button" = "Reintentar";
+"app_general_error_strings_no_build_view" = "fatal error on build the view...";
+
+// MARK: - MAIN LANDING
+"cats_principal_landing_nav_title" = "Cute cats!";

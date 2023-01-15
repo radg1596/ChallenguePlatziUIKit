@@ -31,7 +31,7 @@ final class CatsDetailScreenViewModel: ObservableObject {
     func fetchDataFromModel() {
         descriptionDateText = item.createdAt
         repository
-            .getImage(url: "https://cataas.com/cat/\(item.id)")
+            .getImage(url: item.imageUrl)
             .sink { response in
                 switch response {
                 case .finished:

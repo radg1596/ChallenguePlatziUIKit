@@ -35,15 +35,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     private func configureRootViewController(scene: UIScene) {
         guard let windowsScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: windowsScene)
-        let rootViewController = CatsPrincipalLandingView()
+        let rootViewController = CatsPrincipalLandingRouter.createModule()
         let navigationController = UINavigationController(rootViewController: rootViewController)
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
     }
 
     private func setCacheSizeForURLSession() {
-        URLCache.shared.memoryCapacity = 250 * 1024 * 1024
-        URLCache.shared.diskCapacity = 1024 * 1024 * 1024
+        URLCache.shared.memoryCapacity = AppGeneralConstants.memoryCacheSize
+        URLCache.shared.diskCapacity = AppGeneralConstants.diskCacheSize
     }
 
 }
