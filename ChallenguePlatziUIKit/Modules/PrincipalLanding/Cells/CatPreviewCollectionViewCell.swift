@@ -52,12 +52,16 @@ class CatPreviewCollectionViewCell: UICollectionViewCell {
 
     // MARK: - UI
     private func configureUI() {
-        backgroundColor = .backgroundColorLight
-        layer.cornerRadius = constants.viewCornerRadius
+        configureColors()
         builImageView()
         buildActivityIndicatorView()
-        activityIndicatorView.hidesWhenStopped = true
-        activityIndicatorView.startAnimating()
+        configureContentView()
+        configureActivityIndicator()
+    }
+
+    private func configureColors() {
+        backgroundColor = .backgroundColorLight
+        activityIndicatorView.color = .primaryTextColor
     }
 
     // MARK: - BUILD VIEW
@@ -80,6 +84,16 @@ class CatPreviewCollectionViewCell: UICollectionViewCell {
             activityIndicatorView.centerXAnchor.constraint(equalTo: centerXAnchor),
             activityIndicatorView.centerYAnchor.constraint(equalTo: centerYAnchor)
         ])
+    }
+
+    private func configureContentView() {
+        layer.cornerRadius = constants.viewCornerRadius
+        layer.masksToBounds = true
+    }
+
+    private func configureActivityIndicator() {
+        activityIndicatorView.hidesWhenStopped = true
+        activityIndicatorView.startAnimating()
     }
 
     // MARK: - MODEL DRAW

@@ -55,8 +55,9 @@ class CatsPrincipalLandingView: UIViewController, LoadableViewController {
     }
 
     private func configureNavigationView() {
-        navigationController?.navigationBar.prefersLargeTitles = true
         let appearanceOfNavBar = UINavigationBarAppearance()
+        navigationController?.navigationBar.barTintColor = UIColor.primaryTextColor
+        navigationController?.navigationBar.tintColor = UIColor.primaryTextColor
         appearanceOfNavBar.backgroundColor = .backgroundColorLight
         appearanceOfNavBar.largeTitleTextAttributes = [.foregroundColor: UIColor.primaryTextColor]
         appearanceOfNavBar.titleTextAttributes = [.foregroundColor: UIColor.primaryTextColor]

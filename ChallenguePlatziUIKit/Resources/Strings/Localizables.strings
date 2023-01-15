@@ -17,3 +17,6 @@
 
 // MARK: - MAIN LANDING
 "cats_principal_landing_nav_title" = "Cute cats!";
+
+// MARK: - DETAIL VIEW
+"cats_detail_screen_view_creation_date_title" = "FECHA DE CREACIÓN";
