@@ -15,6 +15,7 @@ final class CatsDetailScreenViewModel: ObservableObject {
     @Published var isLoadingTheImage: Bool
     @Published var descriptionDateText: String?
     @Published var imageOfCat: UIImage?
+    @Published var tags: [String]
 
     // MARK: - PROPERTIES
     private let item: CatPreviewMainItem
@@ -30,6 +31,7 @@ final class CatsDetailScreenViewModel: ObservableObject {
          router: CatsDetailScreenRouterProtocol) {
         self.item = item
         self.isLoadingTheImage = false
+        self.tags = item.tags
         self.repository = repository
         self.router = router
     }
@@ -37,6 +39,7 @@ final class CatsDetailScreenViewModel: ObservableObject {
     // MARK: - METHODS
     func fetchDataFromModel() {
         descriptionDateText = item.createdAt
+        tags = item.tags
         isLoadingTheImage = true
         repository
             .getImage(url: item.imageUrl)

@@ -5,7 +5,7 @@
 //  Created by Ricardo Desiderio on 13/01/23.
 //
 
-import Foundation
+import UIKit
 
 class AppGeneralConstants {
 
@@ -22,6 +22,17 @@ class AppGeneralConstants {
     static let imageTimeOut = 4.0
 
     // MARK: - MAIN URL
-    static let servicesMainUrl = "https://cataas.com/cat/"
+    static let servicesMainUrl = "https://cataas.com/api/"
+    static let imagesMainUrl = "https://cataas.com/cat/"
+
+    // MARK: - COLORS
+    static let tagsColors: [UIColor] = [
+        UIColor.green,
+        UIColor.red,
+        UIColor.blue,
+        UIColor.darkGray,
+        UIColor.cyan,
+        UIColor.brown,
+    ]
 
 }

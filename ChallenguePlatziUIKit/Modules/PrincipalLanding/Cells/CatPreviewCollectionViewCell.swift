@@ -89,6 +89,8 @@ class CatPreviewCollectionViewCell: UICollectionViewCell {
     private func configureContentView() {
         layer.cornerRadius = constants.viewCornerRadius
         layer.masksToBounds = true
+        imageView.contentMode = .scaleAspectFill
+        imageView.clipsToBounds = true
     }
 
     private func configureActivityIndicator() {

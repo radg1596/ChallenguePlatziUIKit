@@ -10,7 +10,7 @@ import UIKit
 final class LoadingViewControllerConstants {
 
     // MARK: - UI
-    let alphaForView: CGFloat = 0.5
+    let alphaForView: CGFloat = 0.1
     let loadingLottieCat: String = "loadingLottieCat"
     let widthFactor: CGFloat = 0.5
     let heightFactor: CGFloat = 0.25

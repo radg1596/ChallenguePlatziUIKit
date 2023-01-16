@@ -13,6 +13,7 @@ final class CatsDetailScreenViewConstants {
     let imageHeightFactor: CGFloat = 0.4
     let labelTopConstant: CGFloat = 10.0
     let labelsLateralConstant: CGFloat = 16.0
+    let tagControllerHeight: CGFloat = 50.0
 
     // MARK: - FONTS
     let detailTitleFontSize: CGFloat = 20.0

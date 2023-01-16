@@ -60,7 +60,8 @@ final class CatsPrincipalLandingViewModel: ObservableObject {
         isLoadingInitialItems = true
         dataRepository
             .fetchCats()
-            .map({$0.map({CatPreviewMainItem(dbo: $0)})})
+            /// First image in api is too large (And there is not resize end points), for UI presentation estetic, will be skipped
+            .map({$0.dropFirst().map({CatPreviewMainItem(dbo: $0)})})
             .sink { [weak self] response in
                 switch response {
                 case .failure:
