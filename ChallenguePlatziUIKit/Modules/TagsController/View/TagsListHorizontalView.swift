@@ -67,6 +67,7 @@ class TagsListHorizontalView: UIViewController {
 
     private func configureLabels() {
         emptyTagsLabel.font = .systemFont(ofSize: constants.tagsLabelSize)
+        view.layer.cornerRadius = constants.viewCornerRadius
     }
 
     // MARK: - BUILD

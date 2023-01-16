@@ -13,5 +13,6 @@ final class TagsListHorizontalViewConstants {
     let tagsLabelSize: CGFloat = 18.0
     let labelLateralConstant: CGFloat = 10.0
     let estimatedItemSize: CGFloat = 50.0
+    let viewCornerRadius: CGFloat = 5.0
 
 }
