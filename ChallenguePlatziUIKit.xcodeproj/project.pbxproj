@@ -49,6 +49,17 @@
 		633851CF2973D64C000A079E /* CatsPrincipalLandingProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633851CE2973D64C000A079E /* CatsPrincipalLandingProtocols.swift */; };
 		633851D12973E092000A079E /* LoadingViewControllerConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633851D02973E092000A079E /* LoadingViewControllerConstants.swift */; };
 		633851D32973E1DA000A079E /* CatPreviewCollectionViewCellConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633851D22973E1D9000A079E /* CatPreviewCollectionViewCellConstants.swift */; };
+		633851D62973E607000A079E /* CatsDetailScreenViewConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633851D52973E607000A079E /* CatsDetailScreenViewConstants.swift */; };
+		633851DA2973F79C000A079E /* CatsDetailScreenViewStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633851D92973F79C000A079E /* CatsDetailScreenViewStrings.swift */; };
+		633851DC2973F861000A079E /* CatsDetailScreenProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633851DB2973F861000A079E /* CatsDetailScreenProtocols.swift */; };
+		633851DE2973F887000A079E /* CatsDetailScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633851DD2973F887000A079E /* CatsDetailScreenRouter.swift */; };
+		633851E229743D3D000A079E /* TagsListHorizontalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633851E129743D3D000A079E /* TagsListHorizontalView.swift */; };
+		633851E429744055000A079E /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633851E329744055000A079E /* UIViewController+Extensions.swift */; };
+		633851E7297444BB000A079E /* TagsListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633851E6297444BB000A079E /* TagsListCollectionViewCell.swift */; };
+		633851EB29744D44000A079E /* TagsListHorizontalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633851EA29744D44000A079E /* TagsListHorizontalViewModel.swift */; };
+		63923CEB2974F4C8001792C6 /* TagsListCollectionViewCellConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63923CEA2974F4C8001792C6 /* TagsListCollectionViewCellConstants.swift */; };
+		63923CEE2974F820001792C6 /* TagsListHorizontalViewConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63923CED2974F820001792C6 /* TagsListHorizontalViewConstants.swift */; };
+		63923CF02974F930001792C6 /* TagsListHorizontalViewStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63923CEF2974F930001792C6 /* TagsListHorizontalViewStrings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +124,17 @@
 		633851CE2973D64C000A079E /* CatsPrincipalLandingProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsPrincipalLandingProtocols.swift; sourceTree = "<group>"; };
 		633851D02973E092000A079E /* LoadingViewControllerConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewControllerConstants.swift; sourceTree = "<group>"; };
 		633851D22973E1D9000A079E /* CatPreviewCollectionViewCellConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatPreviewCollectionViewCellConstants.swift; sourceTree = "<group>"; };
+		633851D52973E607000A079E /* CatsDetailScreenViewConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsDetailScreenViewConstants.swift; sourceTree = "<group>"; };
+		633851D92973F79C000A079E /* CatsDetailScreenViewStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsDetailScreenViewStrings.swift; sourceTree = "<group>"; };
+		633851DB2973F861000A079E /* CatsDetailScreenProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsDetailScreenProtocols.swift; sourceTree = "<group>"; };
+		633851DD2973F887000A079E /* CatsDetailScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsDetailScreenRouter.swift; sourceTree = "<group>"; };
+		633851E129743D3D000A079E /* TagsListHorizontalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagsListHorizontalView.swift; sourceTree = "<group>"; };
+		633851E329744055000A079E /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		633851E6297444BB000A079E /* TagsListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagsListCollectionViewCell.swift; sourceTree = "<group>"; };
+		633851EA29744D44000A079E /* TagsListHorizontalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagsListHorizontalViewModel.swift; sourceTree = "<group>"; };
+		63923CEA2974F4C8001792C6 /* TagsListCollectionViewCellConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagsListCollectionViewCellConstants.swift; sourceTree = "<group>"; };
+		63923CED2974F820001792C6 /* TagsListHorizontalViewConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagsListHorizontalViewConstants.swift; sourceTree = "<group>"; };
+		63923CEF2974F930001792C6 /* TagsListHorizontalViewStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagsListHorizontalViewStrings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,6 +241,7 @@
 		6309BF052971121000AA6DDF /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				633851DF29743CF0000A079E /* TagsController */,
 				6309BF4D29729C9400AA6DDF /* Common */,
 				6309BF3429726ECB00AA6DDF /* DetailScreen */,
 				6309BF0629712FB100AA6DDF /* PrincipalLanding */,
@@ -263,6 +286,7 @@
 			children = (
 				6309BF102971372800AA6DDF /* UICollectionViewCell+Extensions.swift */,
 				633851CA2973C84C000A079E /* UIColor+Extensions.swift */,
+				633851E329744055000A079E /* UIViewController+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -364,6 +388,9 @@
 		6309BF3429726ECB00AA6DDF /* DetailScreen */ = {
 			isa = PBXGroup;
 			children = (
+				633851D82973F785000A079E /* Router */,
+				633851D72973F77B000A079E /* Protocols */,
+				633851D42973E5F7000A079E /* Model */,
 				6309BF40297277E100AA6DDF /* Repository */,
 				6309BF3F297274F800AA6DDF /* ViewModel */,
 				6309BF3C297274E700AA6DDF /* View */,
@@ -528,6 +555,76 @@
 			path = Constants;
 			sourceTree = "<group>";
 		};
+		633851D42973E5F7000A079E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				633851D52973E607000A079E /* CatsDetailScreenViewConstants.swift */,
+				633851D92973F79C000A079E /* CatsDetailScreenViewStrings.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		633851D72973F77B000A079E /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				633851DB2973F861000A079E /* CatsDetailScreenProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		633851D82973F785000A079E /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				633851DD2973F887000A079E /* CatsDetailScreenRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		633851DF29743CF0000A079E /* TagsController */ = {
+			isa = PBXGroup;
+			children = (
+				63923CEC2974F80C001792C6 /* Model */,
+				633851E029743D0E000A079E /* View */,
+				633851E829744BF3000A079E /* ViewModel */,
+				633851E529744439000A079E /* Cell */,
+			);
+			path = TagsController;
+			sourceTree = "<group>";
+		};
+		633851E029743D0E000A079E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				633851E129743D3D000A079E /* TagsListHorizontalView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		633851E529744439000A079E /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				633851E6297444BB000A079E /* TagsListCollectionViewCell.swift */,
+				63923CEA2974F4C8001792C6 /* TagsListCollectionViewCellConstants.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		633851E829744BF3000A079E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				633851EA29744D44000A079E /* TagsListHorizontalViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		63923CEC2974F80C001792C6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				63923CED2974F820001792C6 /* TagsListHorizontalViewConstants.swift */,
+				63923CEF2974F930001792C6 /* TagsListHorizontalViewStrings.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -679,26 +776,37 @@
 				6309BF4929729B9900AA6DDF /* LottiePlayerView.swift in Sources */,
 				6309BF0929712FED00AA6DDF /* CatsPrincipalLandingView.swift in Sources */,
 				633851BB2973BBA9000A079E /* AlertViewManager.swift in Sources */,
+				63923CEE2974F820001792C6 /* TagsListHorizontalViewConstants.swift in Sources */,
+				63923CF02974F930001792C6 /* TagsListHorizontalViewStrings.swift in Sources */,
 				633851BE2973C4C4000A079E /* EnumStringLocalizable.swift in Sources */,
+				633851D62973E607000A079E /* CatsDetailScreenViewConstants.swift in Sources */,
 				6309BF25297157A200AA6DDF /* GetCatsServiceResponseDBO.swift in Sources */,
 				6309BF112971372800AA6DDF /* UICollectionViewCell+Extensions.swift in Sources */,
 				6309BF3E297274F400AA6DDF /* CatsDetailScreenViewModel.swift in Sources */,
 				6309BF332972689F00AA6DDF /* InternetConnectionCheckerManager.swift in Sources */,
 				6309BF5029729CFE00AA6DDF /* LottiePlayerViewConstants.swift in Sources */,
+				633851E7297444BB000A079E /* TagsListCollectionViewCell.swift in Sources */,
+				63923CEB2974F4C8001792C6 /* TagsListCollectionViewCellConstants.swift in Sources */,
 				6309BF302972689F00AA6DDF /* ImageRemoteDataSourceProtocol.swift in Sources */,
 				6309BF1E297154AE00AA6DDF /* CatsPrincipalLandingApiDataManager.swift in Sources */,
 				6309BF0E2971370D00AA6DDF /* CatPreviewCollectionViewCell.swift in Sources */,
 				633851D32973E1DA000A079E /* CatPreviewCollectionViewCellConstants.swift in Sources */,
+				633851DA2973F79C000A079E /* CatsDetailScreenViewStrings.swift in Sources */,
 				6309BF42297277F700AA6DDF /* CatsDetailScreenRepository.swift in Sources */,
 				6309BF312972689F00AA6DDF /* ImageDownloaderManager.swift in Sources */,
+				633851DC2973F861000A079E /* CatsDetailScreenProtocols.swift in Sources */,
 				6309BF1729714C4B00AA6DDF /* CatPreviewMainItem.swift in Sources */,
 				633851CF2973D64C000A079E /* CatsPrincipalLandingProtocols.swift in Sources */,
+				633851E429744055000A079E /* UIViewController+Extensions.swift in Sources */,
 				6309BF3B2972717500AA6DDF /* CatsPrincipalLandingRouter.swift in Sources */,
 				633851C42973C541000A079E /* AppGeneralErrorStrings.swift in Sources */,
 				633851D12973E092000A079E /* LoadingViewControllerConstants.swift in Sources */,
 				6309BF5329729DB000AA6DDF /* LoadingViewController.swift in Sources */,
 				6309BF322972689F00AA6DDF /* InternetConnectionCheckeable.swift in Sources */,
 				6309BED6297110C600AA6DDF /* SceneDelegate.swift in Sources */,
+				633851EB29744D44000A079E /* TagsListHorizontalViewModel.swift in Sources */,
+				633851DE2973F887000A079E /* CatsDetailScreenRouter.swift in Sources */,
+				633851E229743D3D000A079E /* TagsListHorizontalView.swift in Sources */,
 				6309BF3829726F0200AA6DDF /* CatsDetailScreenView.swift in Sources */,
 				6309BF272971580100AA6DDF /* CatsPrincipalLandingRepository.swift in Sources */,
 			);

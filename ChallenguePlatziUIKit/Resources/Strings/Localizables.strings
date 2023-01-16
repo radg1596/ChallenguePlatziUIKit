@@ -17,3 +17,10 @@
 
 // MARK: - MAIN LANDING
 "cats_principal_landing_nav_title" = "Cute cats!";
+
+// MARK: - DETAIL VIEW
+"cats_detail_screen_view_creation_date_title" = "FECHA DE CREACIÓN";
+"cats_detail_screen_view_tags_label_title" = "TAGS";
+
+// MARK: - TAGS CONTROLLER
+"tags_horizontal_view_list_no_items_label" = "No disponible";

@@ -10,6 +10,6 @@ import Foundation
 final class CatPreviewCollectionViewCellConstants {
 
     // MARK: - UI
-    let viewCornerRadius: CGFloat = 0.5
+    let viewCornerRadius: CGFloat = 5.0
 
 }

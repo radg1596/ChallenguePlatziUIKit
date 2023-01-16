@@ -8,10 +8,15 @@
 import Combine
 import UIKit
 
-class CatsDetailScreenRepository {
+class CatsDetailScreenRepository: CatsDetailScreenRepositoryProtocol {
 
     // MARK: - PROPERTIES
-    private let imageDataSource: ImageRemoteDataSourceProtocol = ImageDownloaderManager()
+    var imageDataSource: ImageRemoteDataSourceProtocol
+
+    // MARK: - INIT
+    init(imageDataSource: ImageRemoteDataSourceProtocol) {
+        self.imageDataSource = imageDataSource
+    }
 
     // MARK: - METHODS
     func getImage(url: String) -> AnyPublisher<UIImage, Error> {

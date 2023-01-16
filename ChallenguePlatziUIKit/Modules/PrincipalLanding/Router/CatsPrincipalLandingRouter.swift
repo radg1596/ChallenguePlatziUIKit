@@ -20,8 +20,7 @@ class CatsPrincipalLandingRouter: CatsPrincipalLandingRouterProtocol {
     // MARK: - METHODS
     func showDetail(item: CatPreviewMainItem) {
         guard let view = viewReference else { return }
-        let detailView = CatsDetailScreenView()
-        detailView.viewModel = CatsDetailScreenViewModel(item: item)
+        let detailView = CatsDetailScreenRouter.createModule(model: item)
         view.navigationController?.pushViewController(detailView,
                                                       animated: true)
     }

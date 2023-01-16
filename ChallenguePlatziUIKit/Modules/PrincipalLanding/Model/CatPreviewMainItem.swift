@@ -16,7 +16,7 @@ struct CatPreviewMainItem {
 
     // MARK: - INIT DBO
     init(dbo: GetCatsServiceResponseDBO) {
-        self.imageUrl = "\(AppGeneralConstants.servicesMainUrl)\(dbo.id)"
+        self.imageUrl = "\(AppGeneralConstants.imagesMainUrl)\(dbo.id)"
         self.createdAt = dbo.createdAt
         self.tags = dbo.tags
     }
